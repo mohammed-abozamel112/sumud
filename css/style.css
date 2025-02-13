@@ -5,7 +5,7 @@
 }
 
 body {
-background: rgb(189, 87, 74);
+    background: rgb(189, 87, 74);
     background: radial-gradient(circle, rgba(189, 87, 74, 1) 35%, rgba(241, 97, 78, 1) 49%, rgba(241, 97, 78, 1) 58%, rgba(71, 66, 66, 1) 98%);
     background-repeat: no-repeat;
     height: auto;
@@ -37,8 +37,8 @@ background: rgb(189, 87, 74);
 }
 
 .hero-section p {
-    font-size: clamp(0.5rem, 0.75rem, 1rem);
-    font-weight: 200;
+    font-size: clamp(0.75rem, 0.75rem, 1rem);
+    font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
