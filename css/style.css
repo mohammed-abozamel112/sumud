@@ -48,11 +48,11 @@ body {
     height: 12rem;
     margin: auto auto;
     border-radius: 50%;
-    max-width: 10rem;
-    max-height: 10rem;
-    background: url(/images/image.png) no-repeat;
-    background-position: 50% 34%;
-    background-size: 100%;
+    max-width: 12rem;
+    max-height: 12rem;
+    background: url(/images/Untitled.jpg) no-repeat;
+    background-position: 53% 53%;
+    background-size: 196%;
 }
 
 .social-links {
