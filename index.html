@@ -2,41 +2,22 @@
 <html lang="en">
 
 <head>
-  <!-- Snap Pixel Code -->
-  <script type='text/javascript'>
-    (function (e, t, n) {
-      if (e.snaptr) return;
-      var a = e.snaptr = function () {
-        a.handleRequest ? a.handleRequest.apply(a, arguments) : a.queue.push(arguments)
-      };
-      a.queue = [];
-      var s = 'script';
-      r = t.createElement(s);
-      r.async = !0;
-      r.src = n;
-      var u = t.getElementsByTagName(s)[0];
-      u.parentNode.insertBefore(r, u);
-    })(window, document, 'https://sc-static.net/scevent.min.js');
+<!-- Snap Pixel Code -->
+<script type='text/javascript'>
+  (function (e, t, n) {
+    if (e.snaptr) return; var a = e.snaptr = function () { a.handleRequest ? a.handleRequest.apply(a, arguments) : a.queue.push(arguments) };
+    a.queue = []; var s = 'script'; r = t.createElement(s); r.async = !0;
+    r.src = n; var u = t.getElementsByTagName(s)[0];
+    u.parentNode.insertBefore(r, u);
+  })(window, document,
+    'https://sc-static.net/scevent.min.js');
 
-    snaptr('init', '13dcab0d-bfa5-48fc-a209-bc325fd3bb82', {});
-    snaptr('track', 'PAGE_VIEW');
+  snaptr('init', '36b4e8a5-1089-45d1-821a-3372b3d86548', {});
 
-    // Check if Snap Pixel loaded successfully
-    setTimeout(function () {
-      if (typeof snaptr !== 'function') {
-        alert('It seems that the Snap Pixel is being blocked by your browser. Please disable your ad blocker or whitelist this site to ensure proper tracking.');
-      }
-    }, 2000); // Check after 2 seconds
+  snaptr('track', 'PAGE_VIEW');
 
-    // Check for storage access
-    try {
-      localStorage.setItem('test', 'test');
-      localStorage.removeItem('test');
-    } catch (e) {
-      alert('Tracking prevention features may be blocking access to storage. Please adjust your browser settings for full functionality.');
-    }
-  </script>
-  <!-- End Snap Pixel Code -->
+</script>
+<!-- End Snap Pixel Code -->
   <!-- Basic Meta Tags -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
