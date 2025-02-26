@@ -2,17 +2,41 @@
 <html lang="en">
 
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-KXDGKWKZ');</script>
-  <!-- End Google Tag Manager -->
-  <!-- End Snap Pixel Code -->
+  <!-- Snap Pixel Code -->
+  <script type='text/javascript'>
+    (function (e, t, n) {
+      if (e.snaptr) return;
+      var a = e.snaptr = function () {
+        a.handleRequest ? a.handleRequest.apply(a, arguments) : a.queue.push(arguments)
+      };
+      a.queue = [];
+      var s = 'script';
+      r = t.createElement(s);
+      r.async = !0;
+      r.src = n;
+      var u = t.getElementsByTagName(s)[0];
+      u.parentNode.insertBefore(r, u);
+    })(window, document, 'https://sc-static.net/scevent.min.js');
+
+    snaptr('init', '13dcab0d-bfa5-48fc-a209-bc325fd3bb82', {});
+    snaptr('track', 'PAGE_VIEW');
+
+    // Check if Snap Pixel loaded successfully
+    setTimeout(function () {
+      if (typeof snaptr !== 'function') {
+        alert('It seems that the Snap Pixel is being blocked by your browser. Please disable your ad blocker or whitelist this site to ensure proper tracking.');
+      }
+    }, 2000); // Check after 2 seconds
+
+    // Check for storage access
+    try {
+      localStorage.setItem('test', 'test');
+      localStorage.removeItem('test');
+    } catch (e) {
+      alert('Tracking prevention features may be blocking access to storage. Please adjust your browser settings for full functionality.');
+    }
+  </script>
+  <!-- End Snap Pixel Code -->
   <!-- Basic Meta Tags -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -43,30 +67,20 @@
   <link href="/css/aos.css" rel="stylesheet" />
   <!-- Custom CSS -->
   <link href="/css/style.css" rel="stylesheet" />
-  <!-- Snap Pixel Code -->
-  <script type='text/javascript'>
-    (function (e, t, n) {
-      if (e.snaptr) return; var a = e.snaptr = function () { a.handleRequest ? a.handleRequest.apply(a, arguments) : a.queue.push(arguments) };
-      a.queue = []; var s = 'script'; r = t.createElement(s); r.async = !0;
-      r.src = n; var u = t.getElementsByTagName(s)[0];
-      u.parentNode.insertBefore(r, u);
-    })(window, document,
-      'https://sc-static.net/scevent.min.js');
 
-    snaptr('init', '36b4e8a5-1089-45d1-821a-3372b3d86548', {});
-
-    snaptr('track', 'PAGE_VIEW');
-
-  </script>
-  <!-- End Snap Pixel Code -->
-
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KXDGKWKZ');</script>
+  <!-- End Google Tag Manager -->
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KXDGKWKZ" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
   <!-- Hero Section -->
   <section id="home" class="hero-section" data-aos="fade-up">
     <div class="container text-center col-xl-4 col-lg-4 col-sm-12 col-md-12 col-12 w-100 p-5" id="content-hero">
@@ -82,11 +96,11 @@
       <div class="p-2">
         <div class="social-links">
           <a href="https://www.snapchat.com/add/somod1.1?sender_web_id=c63bfadc-1b70-41f5-8f30-c33e3e8f280c&device_type=desktop&is_copy_url=true"
-            alt="صمود إبراهيم" target="_blank"><i class="fab fa-snapchat"></i></a>
-          <a href="https://www.tiktok.com/@sumud.23" alt="صمود إبراهيم" target="_blank"><i
+            alt="صمود إبراهيم" title="صمود إبراهيم" target="_blank"><i class="fab fa-snapchat"></i></a>
+          <a href="https://www.tiktok.com/@sumud.23" title="صمود إبراهيم" alt="صمود إبراهيم" target="_blank"><i
               class="fab fa-tiktok"></i></a>
-          <a href="https://wa.me/+9660530030468" alt="شركة فيد للتسويق والبرمجيات" target="_blank"><i
-              class="fab fa-whatsapp"></i></a>
+          <a href="https://wa.me/+9660530030468" title="شركة فيد للتسويق والبرمجيات" alt="شركة فيد للتسويق والبرمجيات"
+            target="_blank"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
     </div>
@@ -95,7 +109,7 @@
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KXDGKWKZ" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+  <!-- End Google Tag Manager (noscript) -->
   <!-- bootstrap scripts -->
   <script src="/js/bootstrap.bundle.min.js" type="text/javascript"></script>
   <script src="/js/aos.js" type="text/javascript"></script>
